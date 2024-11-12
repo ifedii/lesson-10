@@ -31,22 +31,22 @@
       "calories" : 450,
       "type" : "sorbet",
       "ingredients" : [
-        "peach purée",
-        "mango chunks",
-        "clover honey"
+        "Golden Berry",
+        "Honey chunks",
+        "Banana purée"
       ],
       "image" : "strawberry-sprinkle.svg"
     },
     {
-      "name" : "Mango ",
-      "calories" : 350,
+      "name" : "Custardy Apple",
+      "calories" : 250,
       "type" : "sorbet",
       "ingredients" : [
-        "peach purée",
-        "mango chunks",
-        "clover honey"
+        "Cusard Apple",
+        "Papaya Extracts",
+        "Green Apples"
       ],
-      "image" : "peach-mango.svg"
+      "image" : "ice-cream-xtra1.svg"
     }
   ]
 }
