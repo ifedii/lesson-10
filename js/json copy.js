@@ -1,6 +1,6 @@
 /* STEP 2: Reference the HEADER and the SECTION elements with variables */
 const header = document.querySelector("header");
-const section = document.querySelector("section");
+const section = document.querySelector("sections");
 
 // STEP 3a: Create the asynchronous function populate()
 async function populate() {
@@ -50,11 +50,11 @@ function showTopFlavors(jsonObj) {
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]["name"];
-        image.setAttribute("src", "https://ifedii.github.io/lesson-10/images/" + topFlavors[i]["image"]);
+        image.setAttribute("src", "https://ifedii.github.io/lesson-10/tree/main/images/" + topFlavors[i]["image"]);
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         let _ingredients = topFlavors[i].ingredients;
-        for (ingredient of _ingredients){
+        for (ingredient in _ingredients){
             // add the ingredient to the UL
             let listItem = document.createElement("li");
             listItem.textContent = ingredient;
@@ -66,7 +66,10 @@ function showTopFlavors(jsonObj) {
         article.appendChild(image);
         article.appendChild(ul);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        section.appendChild(article);        
+        section.appendChild(article);
+        console.log("print inner loop")
+
+        
     };
 
 };
